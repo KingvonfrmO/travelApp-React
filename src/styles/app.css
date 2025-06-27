@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #B1D9DB;
+    color: #22223b;
+}

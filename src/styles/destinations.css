@@ -1,0 +1,78 @@
+.destinations{
+    margin: 64px 0 0 0;
+    padding: 0 48px;
+    text-align: center;
+}
+
+.top-selling-label {
+    color: #4a4e69;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.destinations h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 12px 0 32px 0;
+}
+
+.destinations-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    width: 300px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: transform 0.2s;
+}
+
+.destination:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.destination img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 18px 18px 12px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.destination-info > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.weather{
+    display: flex;
+    font-size: 0.95rem;
+    align-self: left;
+}
+.price {
+    color: #ff6f61;
+    font-weight: 700;
+}
+
+.trip-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a4e69;
+    font-size: 0.95rem;
+}

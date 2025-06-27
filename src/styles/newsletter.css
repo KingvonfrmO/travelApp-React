@@ -1,0 +1,30 @@
+.subscribeForm {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    padding: 40px 32px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 64px auto 0;
+}
+
+.subscribeForm h1 {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: #22223b;
+}
+
+.subscribeForm form {
+    display: flex;
+    gap: 16px;
+    max-width: 500px;
+}
+
+.subscribeForm form input[type="email"] {
+    flex: 1;
+    padding: 14px 18px;
+    border: 1px solid #b6e2e3;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
