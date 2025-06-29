@@ -1,7 +1,12 @@
-export function Navbar(){
+import {Link} from "react-router-dom";
+
+export function NavBar(){
     return (
         <div className="navigation">
             <ul className="navBar">
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
                 <li>
                     <a href="#services">Services</a>
                 </li>
@@ -9,10 +14,10 @@ export function Navbar(){
                     <a href="#destinations">Destinations</a>
                 </li>
                 <li>
-                    <a href="#Neswsletter">NewsLetter</a>
+                    <a href="#Newsletter">NewsLetter</a>
                 </li>
                 <li>
-                    <a href="#SiteMap">SiteMap</a>
+                    <a href="#footer">SiteMap</a>
                 </li>
             </ul>
         </div>

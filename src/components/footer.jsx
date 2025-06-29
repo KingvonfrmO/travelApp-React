@@ -1,8 +1,10 @@
 import '../styles/footer.css';
+import '../pages/contact'
+import {Link} from "react-router-dom";
 
 export function Footer(){
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="footer-brand">
                 <div className="logo">travel.</div>
                 <p>Book your trip in minute, get full<br/>Control for much longer.</p>
@@ -10,8 +12,7 @@ export function Footer(){
             <div className="footer-links">
                 <div>
                     <h4>Company</h4>
-                    <a href="#">About</a>
-                    <a href="#">Careers</a>
+                    <Link to="/contact">Contact</Link>
                     <a href="#">Mobile</a>
                 </div>
                 <div>

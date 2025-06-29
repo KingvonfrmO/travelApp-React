@@ -1,10 +1,11 @@
-import playbutton from '../assets/images/play-button.png';
 import '../styles/buttons.css'
 
 export function SigninButton() {
     return (
         <div className="signInButton">
-            <button>Sign In</button>
+            <button>
+                Sign in
+            </button>
         </div>
     );
 }

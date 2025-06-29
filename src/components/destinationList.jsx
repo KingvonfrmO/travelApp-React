@@ -50,7 +50,6 @@ export const destinations = [
         price_label: "4.2k",
         days: 14,
         duration_label: "14 Days Trip",
-        image:
-            "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
     }
 ];
