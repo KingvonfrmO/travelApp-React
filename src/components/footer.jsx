@@ -13,13 +13,13 @@ export function Footer(){
                 <div>
                     <h4>Company</h4>
                     <Link to="/contact">Contact</Link>
-                    <a href="#">Mobile</a>
+                    <Link to="/about">About</Link>
                 </div>
                 <div>
                     <h4>Contact</h4>
-                    <a href="#">Help/FAQ</a>
-                    <a href="#">Press</a>
-                    <a href="#">Affiliates</a>
+                    <a href="">Help/FAQ</a>
+                    <a href="">Press</a>
+                    <a href="">Affiliates</a>
                 </div>
                 <div>
                     <h4>More</h4>

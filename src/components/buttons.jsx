@@ -1,9 +1,15 @@
 import '../styles/buttons.css'
+import {useNavigate} from "react-router-dom";
 
 export function SigninButton() {
+    const navigate = useNavigate();
+    const handleSignIn = () => {
+        navigate('/signin');
+    };
+
     return (
         <div className="signInButton">
-            <button>
+            <button onClick={handleSignIn}>
                 Sign in
             </button>
         </div>
