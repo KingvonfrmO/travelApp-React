@@ -24,27 +24,83 @@ export default function Contact() {
                     <div className="form-grid">
                         <div className="form-group">
                             <label htmlFor="first-name">First Name:</label>
-                            <input type="text" id="first-name"/>
+                            <input
+                                name="firstname"
+                                type="text"
+                                id="first-name"
+                                value={state.firstname}
+                                onChange={(e) => dispatch({
+                                    type: 'UPDATE_INPUT',
+                                    field: e.target.name,
+                                    value: e.target.value
+                                })}
+                            />
+                            {state.errors.firstname && <span className="error">{state.errors.firstname}</span>}
                         </div>
-
                         <div className="form-group">
                             <label htmlFor="last-name">Last Name:</label>
-                            <input type="text" id="last-name"/>
+                            <input
+                                name = "lastname"
+                                type="text"
+                                id="last-name"
+                                value={state.lastname}
+                                onChange={(e) => dispatch({
+                                    type: 'UPDATE_INPUT',
+                                    field: e.target.name,
+                                    value: e.target.value
+                                })}
+                            />
+                            {state.errors.lastname && <span className="error">{state.errors.lastname}</span>}
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="email">Email:</label>
-                            <input type="text" id="email"/>
+                            <input
+                                name="email"
+                                type="text"
+                                id="email"
+                                value={state.email}
+                                onChange={(e) => dispatch({
+                                    type: 'UPDATE_INPUT',
+                                    field: e.target.name,
+                                    value: e.target.value
+                                })}
+                            />
+                            {state.errors.email && <span className="error">{state.errors.email}</span>}
                         </div>
+
+
 
                         <div className="form-group">
                             <label htmlFor="phone">Phone:</label>
-                            <input type="text" id="phone"/>
+                            <input
+                                name="phone"
+                                type="text"
+                                id="phone"
+                                value={state.phone}
+                                onChange={(e) => dispatch({
+                                    type: 'UPDATE_INPUT',
+                                    field: e.target.name,
+                                    value: e.target.value
+                                })}
+                            />
+                            {state.errors.phone && <span className="error">{state.errors.phone}</span>}
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="message">Message</label>
-                            <textarea id="message"></textarea>
+                            <textarea
+                                id="message"
+                                name='message'
+                                value={state.message}
+                                onChange={(e) => dispatch({
+                                    type: 'UPDATE_INPUT',
+                                    field: e.target.name,
+                                    value: e.target.value
+                                })}
+                            >
+                            </textarea>
+                            {state.errors.message && <span className="error">{state.errors.message}</span>}
                         </div>
 
                         <div className="form-group">
