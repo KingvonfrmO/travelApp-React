@@ -27,10 +27,15 @@ export const validateForm = (state) => {
     if (!state.email || !state.email.includes('@')) {
         errors.email = 'Valid email is required';
     }
-    if (state.password.length < 6) {
+    if ('password'in state && state.password.length < 6) {
         errors.password = 'Password must be at least 6 characters';
     }
-    if ()
+    if ('phone' in state && !state.phone.trim()) {
+        errors.phone = 'Phone number is required';
+    }
+    if ('message' in state && !state.message.trim()) {
+        errors.message = 'Message is required';
+    }
     return errors;
 };
 
