@@ -1,14 +1,26 @@
 import "../styles/contact.css";
 import {Footer} from "../components/footer";
 import {Header} from "../components/header";
+import {useReducer} from "react";
+import {initialcontactState, validateForm, reducer} from "../utils";
 
-export default function Contact(){
+export default function Contact() {
+    const [state, dispatch] = useReducer(reducer, initialcontactState);
+    function handleSubmit(e){
+        e.preventDefault();
+        const errors = validateForm(state);
+        if (Object.keys(errors).length > 0){
+            dispatch({type: 'ERROR', errors});
+        } else {
+            dispatch({type: 'RESET'});
+        }
+    }
     return (
         <>
             <Header/>
             <div className="container">
                 <h1>Contact Us</h1>
-                <form action="../">
+                <form onSubmit={handleSubmit}>
                     <div className="form-grid">
                         <div className="form-group">
                             <label htmlFor="first-name">First Name:</label>
@@ -44,6 +56,13 @@ export default function Contact(){
                     <button type="submit">Submit</button>
                 </form>
             </div>
+            <div
+                id="toast"
+                role="status"
+                aria-live="polite"
+                style={{display: "none"}}
+                className="toast"
+            ></div>
             <Footer/>
         </>
     );
