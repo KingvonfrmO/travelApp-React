@@ -36,9 +36,6 @@ export const validateForm = (state) => {
     if ('message' in state && !state.message.trim()) {
         errors.message = 'Message is required';
     }
-    if (!state.consent) {
-        errors.consent = 'Consent is required';
-    }
     return errors;
 };
 

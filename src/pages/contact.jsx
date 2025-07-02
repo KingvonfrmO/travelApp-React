@@ -104,18 +104,8 @@ export default function Contact() {
                         </div>
 
                         <div className="form-group">
-                            <input
-                                name='checkbox'
-                                type="checkbox"
-                                id="consent"
-                                onChange={(e) => dispatch({
-                                    type: 'UPDATE_INPUT',
-                                    field: e.target.name,
-                                    value: e.target.value
-                                })}
-                            />
+                            <input type="checkbox" id="consent"/>
                             <label htmlFor="consent">Do you consent to the above?</label>
-                            {state.errors.message && <span className="error">{state.errors.message}</span>}
                         </div>
                     </div>
 
