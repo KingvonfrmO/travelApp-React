@@ -18,7 +18,7 @@ export const destinations = [
             "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
     },
     {
-        name: "Stockholm, SW",
+        name: "Stockholm",
         price: 6200,
         price_label: "6.2k",
         days: 18,
@@ -27,7 +27,7 @@ export const destinations = [
             "https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80",
     },
     {
-        name: "Cape Town, SA",
+        name: "Cape Town",
         price: 2200,
         price_label: "2.2k",
         days: 11,
