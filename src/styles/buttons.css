@@ -3,9 +3,16 @@ button{
     border-radius: 8px;
 }
 
-.signInButton > button {
-    border: 2px solid #000000;
+.signInButton{
+    border: 1px solid #000000;
     background: none;
+    transition: .2s ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.signInButton:hover{
+    transform: scale(1.05);
 }
 
 .findOutButton{
@@ -14,35 +21,27 @@ button{
     background-color: #F1A501;
     color: white;
     font-size: 1rem;
+    transition: .2s ease-in-out;
 }
 
-.playDemoButton{
-    background: none;
-    border: none;
-    color: #22223b;
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.findOutButton:hover{
+    transform: scale(1.05);
+    background-color: #fd9c27;
 }
 
 .play-icon {
-    background: #ff6f61;
-    color: #fff;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    padding: 5px;
-    font-size: 1.2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    align-items: center;
+    padding-top: 2rem;
+    transition: .2s ease-in-out;
 }
 
-.subscribeButton button{
+.play-icon:hover{
+    transform: scale(1.1);
+}
+
+.subscribeButton{
     background-color: #7CD2D7;
     border: none;
     padding: 15px 30px;

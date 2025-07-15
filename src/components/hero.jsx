@@ -1,6 +1,7 @@
 import heroImage from '../assets/images/Image.png'
-import {FindOutButton, PlayButton} from "./buttons";
+import {Buttons} from "./buttons";
 import '../styles/hero.css';
+
 export function Hero(){
     return (
         <div className="hero">
@@ -16,8 +17,7 @@ export function Hero(){
                     listening. Park gate sell they west hard for the.
                 </p>
                 <div className="hero-actions">
-                    <FindOutButton />
-                    <PlayButton/>
+                    <Buttons label="Find out more" class_name={'findOutButton'}/>
                 </div>
             </div>
             <div className="hero-image">
